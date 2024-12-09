@@ -8,5 +8,5 @@ def get_mask_card_number(card_num: Union[str]) -> Union[str]:
 
 
 def get_mask_account(account_num: Union[str]) -> Union[str]:
-    """Функция маскирует номера банковского счета"""
+    """Функция маскирует номер банковского счета"""
     return f"**{account_num[:4]}"
