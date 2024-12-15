@@ -9,7 +9,6 @@
 git@github.com:helloimlena24/project_lk.git
 ```
 
-
 ## Использование функций:
 1. В модуле src\masks.py находится подготовительный функционал для работы функций в модуле src\widget.py.
 
