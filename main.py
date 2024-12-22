@@ -2,6 +2,8 @@ from src.widget import mask_account_card, get_date
 from src.processing import filter_by_state, sort_by_date
 
 print(mask_account_card("Счет 64686473678894779589"))
+print(mask_account_card("Visa 2134765899800077"))
+
 print(get_date("2024-03-11T02:26:18.671407"))
 
 print(
