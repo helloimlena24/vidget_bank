@@ -169,5 +169,5 @@ cython_debug/
 
 pyproject.toml
 poetry.lock
-.coverage
+.coverage/
 tests/htmlcov
