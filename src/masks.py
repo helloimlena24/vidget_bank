@@ -21,7 +21,3 @@ def get_mask_account(account_num: Union[str]) -> Union[str]:
         raise ValueError("Неверное количество символов")
 
     return f"**{account_num[-4:]}"
-
-
-print(get_mask_card_number("7000792289606361"))
-print(get_mask_account("73654108430135874305"))
