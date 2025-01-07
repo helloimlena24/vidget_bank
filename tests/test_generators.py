@@ -45,7 +45,8 @@ def test_filter_by_currency():
     }
 
 
-def test_filter_by_currency_invalid():
+@pytest.fixture()
+def fixture_filter_by_currency_invalid():
     get_transact = [
         {
             "id": 939719570,
@@ -57,7 +58,11 @@ def test_filter_by_currency_invalid():
             "to": "Счет 11776614605963066702",
         }
     ]
-    result = list(filter_by_currency(get_transact, "USD"))
+    return get_transact
+
+
+def test_filter_by_currency_invalid(fixture_filter_by_currency_invalid):
+    result = list(filter_by_currency(fixture_filter_by_currency_invalid, "USD"))
     assert result == []
 
 
